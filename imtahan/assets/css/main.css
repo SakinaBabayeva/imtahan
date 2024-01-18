@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+}
+header .headercontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headercontainer .nav {
+  width: 80%;
+  min-height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headercontainer .nav button {
+  width: 80px;
+  min-height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+  padding: 5px 10px;
+  line-height: 1;
+}
+header .headercontainer .nav .div ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  gap: 30px;
+}
+header .headercontainer .nav .div ul li a {
+  color: white;
+  text-decoration: none;
+}
+header .collapse {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .collapsed {
+    display: block;
+  }
+  header .div {
+    display: none;
+  }
+}
+main #bookSection {
+  width: 100%;
+  min-height: 500px;
+  background-image: url(/assets/img/bg_2\(1\).jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+main #bookSection .text {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #bookSection .text h1 {
+  color: white;
+  font-family: italic;
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+main #bookSection .text button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  width: 140px;
+  height: 50px;
+}
+main #tastySection {
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: 20px;
+}
+main #tastySection .images img {
+  max-width: 100%;
+}
+main #tastySection .text {
+  padding-top: 20px;
+  gap: 30px;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main #tastySection .text p {
+  color: #8b8b92;
+}
+main #tastySection .text h1 {
+  color: #8b8b92;
+}
+main #productSection {
+  min-height: 870px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main #productSection .text {
+  text-align: center;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #productSection .text h1 {
+  font-size: 20px;
+}
+main #productSection .buttons {
+  text-align: center;
+  gap: 20px;
+}
+main #productSection .buttons .btn {
+  width: 120px;
+  height: 80px;
+  border: 0;
+  background-color: #FFB400;
+  color: black;
+}
+main #productSection .buttons button {
+  width: 140px;
+  height: 50px;
+  border: 0;
+  background-color: white;
+  color: #8b8b92;
+  border: 0;
+}
+main #productSection #productsAll {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+main #productSection #productsAll .miniDiv {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main #productSection #productsAll .miniDiv img {
+  width: 80%;
+  border-radius: 10px;
+}
+main #productSection #productsAll .miniDiv h2 {
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #000 !important;
+  font-size: 20px;
+}
+main #productSection .loadMore {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #productSection .loadMore #loadMore {
+  width: 18%;
+  background-color: #000;
+  color: #fff;
+  height: 54px;
+  border: none;
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+main #productSection .loadMore #loadMore:hover {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+
+#peopleSection {
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: 20px;
+}
+#peopleSection .head {
+  width: 100%;
+  min-height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#peopleSection .head p {
+  color: #8b8b92;
+}
+#peopleSection .head h1 {
+  color: #8b8b92;
+}
+#peopleSection .cart {
+  text-align: center;
+}
+#peopleSection .cart img {
+  width: 90px;
+  border-radius: 50%;
+}
+#peopleSection .cart .icons i {
+  font-size: 10px;
+  color: orangered;
+}
+#peopleSection .cart p {
+  color: #8b8b92;
+}
+#peopleSection .cart h3 {
+  color: black;
+  font-size: 15px;
+}
+
+#blogSection {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#blogSection .head {
+  text-align: center;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#blogSection .head p {
+  color: #8b8b92;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#blogSection .head h2 {
+  color: #8b8b92;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#blogSection .images img {
+  max-width: 100%;
+}
+#blogSection .text {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#blogSection h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#blogSection .icons .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#blogSection .icons .text p {
+  color: #8b8b92;
+}
+#blogSection .icons .text h3 {
+  color: #8b8b92;
+  font-size: 15px;
+}
+
+footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #27272b;
+}
+footer .text {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .text h1 {
+  color: white;
+  font-size: 20px;
+}
+footer .text p {
+  color: #8b8b92;
+}
+footer .text .icons {
+  color: white;
+}
+footer .footerDiv {
+  text-align: center;
+  color: #8b8b92;
+}

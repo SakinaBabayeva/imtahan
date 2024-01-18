@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  .headercontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav {
+      width: 80%;
+      min-height: 40px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        width: 80px;
+        min-height: 40px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-weight: 600;
+        padding: 5px 10px;
+        line-height: 1;
+      }
+      .div {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          list-style: none;
+          gap: 30px;
+          li {
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .collapse {
+    display: none;
+  }
+ 
+}
+@media screen and (max-width: 600px) {
+    header {
+      .collapsed {
+        display: block;
+      }
+      .div {
+        display: none;
+      }
+    }
+  }
+
+
+main{
+    #wish{
+        width: 100%;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        #wishProducts {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 10px;
+           
+          
+            .box {
+                width: 32%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              img {
+                width: 50%;
+                border-radius: 10px;
+              }
+              p {
+                font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+                  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-weight: 700;
+                color: #000 !important;
+                font-size: 20px;
+              }
+    
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 80%;
+                button {
+                  border: none;
+                  background-color: #fff;
+                  color: #f16821;
+                  font-weight: 600;
+                  i {
+                    font-size: 20px;
+                  }
+                }
+           
+            }
+          }  
+    }
+}
+
+footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #27272b;
+  .text {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    h1 {
+      color: white;
+      font-size: 20px;
+    }
+    p {
+      color: #8b8b92;
+    }
+    .icons {
+      color: white;
+    }
+  }
+
+  .footerDiv {
+    text-align: center;
+    color: #8b8b92;
+  }
+}
+
